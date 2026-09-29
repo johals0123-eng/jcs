@@ -325,24 +325,30 @@ export default function ContactPage() {
             </FadeIn>
 
             {/* MAP PLACEHOLDER */}
+            {/* GOOGLE MAP */}
             <FadeInScale>
-              <div className="relative min-h-[400px] overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
-                <div className="absolute inset-0 industrial-grid opacity-20" />
+              <div className="relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
+                <div className="relative h-[400px] w-full">
+                  <iframe
+                    title="Johal Crane Services Location"
+                    src="https://www.google.com/maps?q=21.8691234,83.9744497&z=17&output=embed"
+                    className="h-full w-full border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    allowFullScreen
+                  />
 
-                <div className="absolute inset-0 flex items-center justify-center p-6">
-                  <div className="max-w-sm text-center">
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-yellow-400/20 bg-yellow-400/10">
-                      <MapPin className="h-8 w-8 text-yellow-400" />
-                    </div>
-
-                    <h3 className="mt-6 text-xl font-bold">
-                      Google Maps
-                    </h3>
-
-                    <p className="mt-3 text-sm leading-7 text-zinc-500">
-                      The actual Google Maps embed will be connected once the
-                      verified business location/map link is provided.
-                    </p>
+                  {/* Get Directions Button */}
+                  <div className="absolute bottom-5 left-1/2 z-10 -translate-x-1/2">
+                    <a
+                      href="https://maps.app.goo.gl/4ERVcRnzvuZDqb4g6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-xl bg-yellow-400 px-5 py-3 text-sm font-bold text-zinc-950 shadow-lg transition hover:bg-yellow-300 hover:shadow-xl"
+                    >
+                      <MapPin className="h-4 w-4" />
+                      Get Directions
+                    </a>
                   </div>
                 </div>
               </div>
