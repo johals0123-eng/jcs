@@ -4,8 +4,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { Footer } from "@/components/layout/footer";
-import { FloatingActions } from "@/components/layout/floating-actions";
-import { Navbar } from "@/components/layout/navbar";
+// import { FloatingActions } from "@/components/layout/floating-actions";
+// import { Navbar } from "@/components/layout/navbar";
+
+// import { Footer } from "@/components/layout/footer";
+import { SiteChrome } from "@/components/layout/site-chrome";
 import { LocalBusinessSchema } from "@/components/seo/local-business-schema";
 
 
@@ -103,13 +106,13 @@ export default function RootLayout({
 
         <LocalBusinessSchema />
         
-        <Navbar />
+        <SiteChrome />
 
         {children}
 
         <Footer />
 
-        <FloatingActions />
+        
       </body>
     </html>
   );
