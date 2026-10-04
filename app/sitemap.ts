@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "https://www.johalcraneservices.com/";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
