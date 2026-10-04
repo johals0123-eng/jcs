@@ -128,7 +128,7 @@ export default function WhyChooseUsPage() {
             <FadeIn>
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-yellow-400/30 bg-black/30 px-4 py-2 text-sm font-medium text-yellow-300 backdrop-blur-md">
                 <ShieldCheck className="h-4 w-4" />
-                Why Johal Crane
+                Why Johal Crane Services
               </div>
             </FadeIn>
 
@@ -244,7 +244,7 @@ export default function WhyChooseUsPage() {
         <Container>
           <FadeIn>
             <SectionHeading
-              eyebrow="Why Choose Johal Crane"
+              eyebrow="Why Choose Johal Crane Services"
               title="Six Practical Reasons to Work With Us."
               description="Our website communicates the areas that matter when evaluating crane and lifting support for a project."
               align="center"
