@@ -92,14 +92,16 @@ export function Navbar() {
             className="relative block h-12 w-44 shrink-0"
             aria-label="Johal Crane Services"
           >
+          <div className="relative h-20 w-64 md:h-24 md:w-80">
             <Image
               src="/logo/johal-crane-logo.svg"
               alt="Johal Crane Services"
               fill
               priority
-              sizes="176px"
+              sizes="(max-width: 768px) 256px, 320px"
               className="object-contain object-left"
             />
+          </div>
           </Link>
 
           {/* Desktop Navigation */}
